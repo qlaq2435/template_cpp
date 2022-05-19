@@ -4,7 +4,8 @@
     "cmake.buildArgs": [
         "--parallel",
     ],
-    // "CAMKE_BUILD_GENERATOR": "x64"
+    // C/Cpp扩展禁用补全，仅用于debug
+    "C_Cpp.intelliSenseEngine": "Disabled",
     //clangd
     "clangd.arguments": [
         // 在后台自动分析文件（基于complie_commands)

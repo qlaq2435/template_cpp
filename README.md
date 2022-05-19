@@ -13,7 +13,7 @@
 
 ### Prerequisites
 
-需要开发机器上有 cmake、mingw、llvm、clang、vscode 环境。除此之外 vscode 需要安装插件 clangd、calng-formate、codelldb、cmake、cmake-tools、cmake-formate。
+需要开发机器上有 cmake、mingw、llvm、clang、vscode 环境。除此之外 vscode 需要安装插件 clangd、calng-formate、codelldb、cmake、cmake-tools、cmake-formate、c_cpp。
 
 ### Installing
 
