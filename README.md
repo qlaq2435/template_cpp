@@ -13,7 +13,7 @@
 
 ### Prerequisites
 
-需要开发机器上有 cmake、mingw、llvm、clang、vscode 环境。除此之外 vscode 需要安装插件 clangd、calng-formate、codelldb、cmake、cmake-tools、cmake-formate、c_cpp。
+需要开发机器上有 cmake、mingw、llvm、clang、vscode 环境。除此之外 vscode 需要安装插件 clangd、calng-formate、codelldb、cmake、cmake-tools、cmake-formate、c_cpp，具体需要安装哪些插件可以在 vscode 插件商店的推荐进行查看。推荐安装 Fira Code 字体，获得更好体验。
 
 ### Installing
 
