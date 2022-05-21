@@ -85,8 +85,8 @@
   "editor.suggestOnTriggerCharacters": true,
   // 始终预先选择第一个建议
   "editor.suggestSelection": "first",
-  // 一个制表符 = 2个空格
-  "editor.tabSize": 2,
+  // 一个制表符 = 4个空格
+  "editor.tabSize": 4,
   // 不突出显示可能与基本 ASCII 字符混淆的字符
   "editor.unicodeHighlight.ambiguousCharacters": false,
   // 会根据文档中的文字提供建议列表
