@@ -1,12 +1,23 @@
 cmake_minimum_required(VERSION 3.0.0)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -target x86_64-w64-windows-gnu")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -std=c++17 -target x86_64-w64-windows-gnu")
-
 project (hello)
+# //CONFIG::
+# 若不适用clang的话，可以将这段注释删去。
+# windows上clang的功能可以通过插件提供，如果一定要使用clang
+# 需要根据使用msvc还是mingw指定target 参数，不指定的话在windows上默认是使用msvc
+# clang使用msvc:
+# set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -target x86_64-w64-windows-mdvc")
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -std=c++17 -target x86_64-w64-windows-msvc")
+# 或
+# set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -std=c++17")
+# clang使用mingw:
+# set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -target x86_64-w64-windows-gnu")
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -std=c++17 -target x86_64-w64-windows-gnu")
+# 不适用clang的话，使用下面的设置即可:
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -std=c++17")
 
-set(CMAKE_C_COMPILER "clang")
-set(CMAKE_CXX_COMPILER "clang++")
 
 include(CTest)
 enable_testing()

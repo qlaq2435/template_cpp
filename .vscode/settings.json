@@ -25,10 +25,14 @@
     // pch优化的位置
     "--pch-storage=disk",
     // 查询编译器的位置
-    "--query-driver=D:\\Develop\\.Env\\llvm\\bin\\clang++.exe"
+    //CONFIG::
+    // windows上clang默认回去查找msvc的位置，并根据msvc头文件来进行提示，因此可以不用进行指定
+    // 若要使用mingw，需指定具体编译器的绝对路径，如下：
+    "--query-driver=D:\\Develop\\.Env\\mingw64\\bin\\g++.exe"
   ],
   //clang-format
-  "clang-format.executable": "D:\\Develop\\.Env\\llvm\\bin\\clang-format.exe",
+  //CONFIG::
+  "clang-format.executable": "C:\\Users\\xwy\\.vscode\\extensions\\ms-vscode.cpptools-1.9.8-win32-x64\\LLVM\bin\\clang-format.exe",
   "clang-format.fallbackStyle": "Google",
 
   /**********
@@ -157,7 +161,7 @@
   },
 
   // 对光标所在行禁用连体字
-  "disableLigatures.mode": "Cursor",
+  "disableLigatures.mode": "Line",
   // 用于 CodeLens 的字体系列
   "editor.codeLensFontFamily": "Fira Code",
   // 字体系列
