@@ -16,10 +16,9 @@ project (hello)
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -std=c++17 -target x86_64-w64-windows-gnu")
 # 不使用clang的话，使用下面的设置即可:
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
-# mingw使用c++17标准
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -std=c++17")
-# msvc使用c++17标准
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /std:c++17")
+
+# 使用c++17标准
+set(CMAKE_CXX_STANDARD 17)
 
 
 include(CTest)
