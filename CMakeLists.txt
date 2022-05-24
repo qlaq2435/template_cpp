@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0.0)
-
 project (hello)
+
 # //CONFIG::
 # 若不适用clang的话，可以将这段注释删去。
 # windows上clang的功能可以通过插件提供，如果一定要使用clang
@@ -14,9 +14,12 @@ project (hello)
 # clang使用mingw:
 # set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -target x86_64-w64-windows-gnu")
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -std=c++17 -target x86_64-w64-windows-gnu")
-# 不适用clang的话，使用下面的设置即可:
+# 不使用clang的话，使用下面的设置即可:
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
+# mingw使用c++17标准
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -std=c++17")
+# msvc使用c++17标准
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /std:c++17")
 
 
 include(CTest)
